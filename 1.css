@@ -1,0 +1,60 @@
+body {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   height: 100vh;
+}
+#roof {
+   width: 300px;
+   height: 100px;
+   background-color: red;
+   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+#wall {
+   width: 300px;
+   height: 200px;
+   background-color: black;
+}
+.home1 {
+   position: absolute;
+}
+.home2 {
+   position: relative;
+}
+#window {
+   width: 100px;
+   height: 100px;
+   background-color: #fff;
+   border-radius: 50%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+#pipe {
+   width: 30px;
+   height: 100px;
+   background-color: brown;
+   top: -120px;
+   left: 20%;
+}
+
+.container {
+   animation: dance 3s infinite linear;
+}
+.home {
+   transition: 1s;
+}
+.home:hover {
+   transform: scale(1.1);
+}
+@keyframes dance {
+   0% {
+      transform: rotate(0deg);
+   }
+   50% {
+      transform: rotate(180deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
